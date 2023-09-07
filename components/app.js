@@ -5,6 +5,7 @@
 import Router from "../service/Router.js";
 import Store from "../service/Store.js";
 import { loadData } from "../service/menu.js";
+import { MenuPage } from "./MenuPage.js";
 
 window.app = {};
 

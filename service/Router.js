@@ -30,19 +30,18 @@ const Router = {
 
     switch (route) {
       case "/":
-        pageElement = document.createElement("h1");
-        pageElement.textContent = "Home Page";
+        pageElement = document.createElement("menu-page");
+        
         break;
 
       case "/order":
         pageElement = document.createElement("h1");
-        pageElement.textContent = "Order Page";
+       
         break;
 
       default:
         if (route.startsWith === "/product/") {
           pageElement = document.createElement("h1");
-          pageElement.textContent = "Product";
           let paramId = route.substring(route.lastIndexOf("/") + 1);
           pageElement.dataset.id = paramId;
         }
